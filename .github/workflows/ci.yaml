@@ -1,5 +1,9 @@
 name: challenge
 on: [push]
+defaults:
+  run:
+    shell: bash
+    working-directory: ./codebase/rdicidr-0.1.0
 jobs:
   test:
     runs-on: ubuntu-latest
